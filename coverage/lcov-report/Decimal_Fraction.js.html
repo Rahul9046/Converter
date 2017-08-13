@@ -132,8 +132,42 @@
 87
 88
 89
-90</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -166,7 +200,20 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">3x</span>
@@ -174,7 +221,6 @@
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
@@ -183,20 +229,16 @@
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -208,7 +250,6 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
@@ -221,102 +262,124 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import n2w from './n2w.js'
-var ordinals={
-                "first":[1,"st"],
-                "second":[2,"nd"],
-                "third":[3,"rd"],
-                "fourth":[4,"th"],
-                "fifth":[5,"th"],
-                "sixth":[6,"th"],
-                "seventh":[7,"th"],
-                "eigth":[8,"th"],
-                "ninth":[9,"th"],
-                "tenth":[10,"th"],
-                "eleventh":[11,"th"],
-                "twelfth":[12,"th"],
-                "thirteenth":[13,"th"],
-                "fourteenth":[14,"th"],
-                "fifteenth":[15,"th"],
-                "sixteenth":[16,"th"],
-                "seventeenth":[17,"th"],
-                "eighteenth":[18,"th"],
-                "nineteenth":[19,"th"],
-                "twentyth":[20,"th"]
-               };
-String.prototype.contains=function(toCheck){
-    var splitStr=this.split("");
-    for(var i=0; i&lt;splitStr.length; i++){
-        if(splitStr[i]===toCheck){
-            return true;
-        }
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">/**
+ * @borrows n2w as n2w
+ */
+import n2w from './n2w.js';
+/**
+ * Contains the string representation of each ordinal.
+ */
+var ordinals = {
+  'first': [1, 'st'],
+  'second': [2, 'nd'],
+  'third': [3, 'rd'],
+  'fourth': [4, 'th'],
+  'fifth': [5, 'th'],
+  'sixth': [6, 'th'],
+  'seventh': [7, 'th'],
+  'eigth': [8, 'th'],
+  'ninth': [9, 'th'],
+  'tenth': [10, 'th'],
+  'eleventh': [11, 'th'],
+  'twelfth': [12, 'th'],
+  'thirteenth': [13, 'th'],
+  'fourteenth': [14, 'th'],
+  'fifteenth': [15, 'th'],
+  'sixteenth': [16, 'th'],
+  'seventeenth': [17, 'th'],
+  'eighteenth': [18, 'th'],
+  'nineteenth': [19, 'th'],
+  'twentyth': [20, 'th']
+};
+/**
+ * A method that checks if a particular charcter is present inside a string.
+ * @function
+ * @param {string} toCheck-The character to be checked inside a string
+ * @returns {boolean} 
+ * @class 
+ */
+String.prototype.contains = function (toCheck) {
+  var splitStr = this.split('');
+  for (var i = 0; i &lt; splitStr.length; i++) {
+    if (splitStr[i] === toCheck) {
+      return true;
     }
-    return false;    
+  }
+  return false;
+};
+/**
+ * The Decimal Fraction class
+ * @class
+ */
+class DecimalFraction {
+  /**
+   * @constructor
+   * @param {string} str-The alphanumeric string that contains a decimal point or a fractional part
+   */
+  constructor (str) {
+    this.str = str;
+  }
+  /**
+   * The method that converts the string to its numeric representation
+   * @function
+   * @returns {string}
+   */
+  convert () {
+    var parsedStr = '';
+    if (this.str.contains('.')) {
+      var splitStr = this.str.split('.');
+      parsedStr += n2w(splitStr[0]) + ' point ' + n2w(splitStr[1]);
+      return parsedStr;
+    } else if (this.str.contains('/')) {
+      var splitStr = this.str.split('/'), tobeParsed = '';
+      parsedStr += n2w(splitStr[0]) + ' ';
+      <span class="missing-if-branch" title="if path not taken" >I</span>if (splitStr[1].length &gt;= 2) {
+<span class="cstat-no" title="statement not covered" >        if (splitStr[1].length === 2) {</span>
+<span class="cstat-no" title="statement not covered" >          if (splitStr[1].slice(0, 1) === '1') {</span>
+<span class="cstat-no" title="statement not covered" >            tobeParsed = splitStr[1];</span>
+          } else {
+<span class="cstat-no" title="statement not covered" >            parsedStr += n2w(splitStr[1].slice(0, 1) + '0') + ' ';</span>
+<span class="cstat-no" title="statement not covered" >            tobeParsed = splitStr[1].slice(-1);</span>
+          }
+        } else {
+<span class="cstat-no" title="statement not covered" >          if (splitStr[1].slice(-2, -1) === '1') {</span>
+<span class="cstat-no" title="statement not covered" >            tobeParsed = splitStr[1].slice(-2);</span>
+<span class="cstat-no" title="statement not covered" >            parsedStr += n2w(splitStr[1].slice(0, splitStr[1].length - 2) + '00') + ' ';</span>
+          } else {
+<span class="cstat-no" title="statement not covered" >            parsedStr += n2w(splitStr[1].slice(0, splitStr[1].length - 1) + '0') + ' ';</span>
+<span class="cstat-no" title="statement not covered" >            tobeParsed = splitStr[1].slice(-1);</span>
+          }
+        }
+      } else {
+        tobeParsed += splitStr[1];
+      }
+      for (var keys in ordinals) {
+        if (ordinals[keys][0] === Number(tobeParsed)) {
+          parsedStr += keys;
+        }
+      }
+      return parsedStr;
+    } else <span class="missing-if-branch" title="else path not taken" >E</span>if (this.str.contains('-')) {
+      var splitStr = this.str.split('-'), parsedStr = '';
+      parsedStr += n2w(splitStr[0]) + ' ';
+      for (var keys in ordinals) {
+        if ((ordinals[keys][0] + ordinals[keys][1]) === splitStr[1]) {
+          parsedStr += keys;
+        }
+      }
+      return parsedStr;
+    }
+  }
 }
-class DecimalFracton{
-    constructor(str){
-        this.str=str;
-    }
-    convert(){
-        var parsedStr="";
-        if(this.str.contains('.')){
-           var splitStr = this.str.split('.');
-           parsedStr+=n2w(splitStr[0])+" point "+n2w(splitStr[1]);
-           return parsedStr;
-        }
-        else if(this.str.contains('/')){
-           var splitStr = this.str.split('/'),tobeParsed="";
-           parsedStr+=n2w(splitStr[0])+" ";
-           <span class="missing-if-branch" title="if path not taken" >I</span>if(splitStr[1].length&gt;=2){
-<span class="cstat-no" title="statement not covered" >                if(splitStr[1].length===2){ </span>
-<span class="cstat-no" title="statement not covered" >                        if(splitStr[1].slice(0,1)==='1'){</span>
-<span class="cstat-no" title="statement not covered" >                            tobeParsed=splitStr[1];</span>
-                        }
-                        else{
-<span class="cstat-no" title="statement not covered" >                            parsedStr+=n2w(splitStr[1].slice(0,1)+'0')+" ";</span>
-<span class="cstat-no" title="statement not covered" >                            tobeParsed=splitStr[1].slice(-1);</span>
-                        }  
-                }
-                else{
-<span class="cstat-no" title="statement not covered" >                    if(splitStr[1].slice(-2,-1)==='1'){</span>
-<span class="cstat-no" title="statement not covered" >                            tobeParsed=splitStr[1].slice(-2);</span>
-<span class="cstat-no" title="statement not covered" >                            parsedStr+=n2w(splitStr[1].slice(0,splitStr[1].length-2)+'00')+" ";</span>
-                        }
-                        else{
-<span class="cstat-no" title="statement not covered" >                            parsedStr+=n2w(splitStr[1].slice(0,splitStr[1].length-1)+'0')+" ";</span>
-<span class="cstat-no" title="statement not covered" >                            tobeParsed=splitStr[1].slice(-1);</span>
-                        }
-                }
-           }
-           else{
-               tobeParsed+=splitStr[1];
-           }
-           for(var keys in ordinals){
-               if(ordinals[keys][0] === Number(tobeParsed)){
-                    parsedStr+=keys;   
-               }
-           }
-         return parsedStr; 
-        }
-        else <span class="missing-if-branch" title="else path not taken" >E</span>if(this.str.contains('-')){
-            var splitStr=this.str.split('-'),parsedStr="";
-            parsedStr+=n2w(splitStr[0])+" ";
-            for(var keys in ordinals){
-                if((ordinals[keys][0] + ordinals[keys][1]) === splitStr[1]){
-                    parsedStr+=keys;
-                }
-            }
-            return parsedStr;
-        }
-    }
-}
-export default DecimalFracton;</pre></td></tr>
+export default DecimalFraction;
+&nbsp;</pre></td></tr>
 </table></pre>
 <div class='push'></div><!-- for sticky footer -->
 </div><!-- /wrapper -->
 <div class='footer quiet pad2 space-top1 center small'>
   Code coverage
-  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Sat Aug 12 2017 16:27:56 GMT+0530 (IST)
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Sun Aug 13 2017 20:51:54 GMT+0530 (IST)
 </div>
 </div>
 <script src="prettify.js"></script>
