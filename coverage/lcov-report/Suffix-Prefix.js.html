@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for Suffix-Prefix.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="prettify.css" />
+    <link rel="stylesheet" href="base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="index.html">All files</a> Suffix-Prefix.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">90% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>27/30</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">92.59% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>25/27</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>2/2</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">89.66% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>26/29</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line high'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">20x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">40x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">14x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import n2w from './n2w.js'
+var keywords= {
+               "cardinal": {
+                   "first":[1,"st"],
+                   "second":[2,"nd"],
+                   "third":[3,"rd"],
+                   "fourth":[4,"th"],
+                   "fifth":[5,"th"],
+                   "sixth":[6,"th"],
+                   "seventh":[7,"th"],
+                   "eigth":[8,"th"],
+                   "ninth":[9,"th"],
+                   "tenth":[10,"th"],
+                   "eleventh":[11,"th"],
+                   "twelfth":[12,"th"],
+                   "thirteenth":[13,"th"],
+                   "fourteenth":[14,"th"],
+                   "fifteenth":[15,"th"],
+                   "sixteenth":[16,"th"],
+                   "seventeenth":[17,"th"],
+                   "eighteenth":[18,"th"],
+                   "nineteenth":[19,"th"],
+                   "twentyth":[20,"th"]
+               },
+            };
+class SuffixPrefix{
+    constructor(str){
+        this.str=str;
+    }
+    convert(){
+        var parsedStr="";
+        if((this.str.slice(-2)==="st" || this.str.slice(-2)==="th" || this.str.slice(-2)==="rd" || this.str.slice(-2)==="nd") &amp;&amp; (isNaN(this.str.slice(0,this.length-2))===false)){
+            if(this.str.slice(-4,-3) !== "1"){
+               <span class="missing-if-branch" title="if path not taken" >I</span>if(this.str.slice(0,this.str.length-3) !== ""){
+<span class="cstat-no" title="statement not covered" >                 parsedStr+=n2w(this.str.slice(0,this.str.length-3)+"0")+" ";         </span>
+               } 
+               for(var keys in keywords.cardinal){
+                if((keywords.cardinal[keys][0] + keywords.cardinal[keys][1]) === this.str.slice(-3)){
+                    parsedStr+=keys;
+                }
+                } 
+            }
+            else{
+                if(this.str.slice(0,this.str.length-4) !== ""){
+                  parsedStr+=n2w(this.str.slice(0,this.str.length-4)+"00")+" ";
+                }
+                for(var keys in keywords.cardinal){
+                if((keywords.cardinal[keys][0] + keywords.cardinal[keys][1]) === this.str.slice(-4)){
+                    parsedStr+=keys;
+                }
+            }
+            }
+            
+        }
+        else{
+            var splitStr=this.str.split(""),toBeParsed="";
+            for(var i=0; i&lt;splitStr.length; i++){
+                if(isNaN(splitStr[i])===false){
+                    toBeParsed+=splitStr[i]; 
+                    if(i===splitStr.length-1){
+                        parsedStr+=n2w(toBeParsed);
+                    }   
+                }
+                else{
+                    if(toBeParsed===""){
+                        parsedStr+=splitStr[i];
+                    }
+                    else <span class="missing-if-branch" title="if path not taken" >I</span>if(toBeParsed !== "" &amp;&amp; i===splitStr.length){
+<span class="cstat-no" title="statement not covered" >                        parsedStr=n2w(toBeParsed)+splitStr[i];</span>
+<span class="cstat-no" title="statement not covered" >                        toBeParsed="";</span>
+                    }
+                    else{
+                        parsedStr=n2w(toBeParsed)+splitStr[i];
+                        toBeParsed="";
+                    }
+                }
+            }
+        }
+        return parsedStr;
+    }
+}
+export default SuffixPrefix;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Sat Aug 12 2017 16:27:56 GMT+0530 (IST)
+</div>
+</div>
+<script src="prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="sorter.js"></script>
+</body>
+</html>
