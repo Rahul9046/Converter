@@ -1,8 +1,8 @@
 import Decider from './Decider.js';
 class Identifier {
-  constructor (str, mainArr) {
+  constructor (str, main_arr) {
     this.toParse = str;
-    this.mainArr = mainArr;
+    this.main_arr = main_arr;
   }
   getParsed () {
     const pattern = /[0-9]/;
@@ -13,20 +13,20 @@ class Identifier {
         parsedArray[index++] = [splittedText[i], i, 0];
       }
     }
-    (function (mainArr) {
+    (function (main_arr) {
       var checkForDirtyBits = setInterval(function () {
         var flag = 1;
         for (var i = 0; i < parsedArray.length; i++) {
           flag = flag && parsedArray[i][2];
         }
         if (flag) {
-          document.getElementById('output').innerHTML = mainArr.join(' ').toString();
+          document.getElementById('output').innerHTML = main_arr.join(' ').toString();
           clearTimeout(checkForDirtyBits);
         }
       }, 1);
-    })(this.mainArr);
+    })(this.main_arr);
     var deciderObj = new Decider(parsedArray);
-    deciderObj.decider(this.mainArr);
+    deciderObj.decider(this.main_arr);
   }
 }
 export default Identifier;

@@ -9,7 +9,6 @@
   },
   "scripts": {
     "test": "jest --coverage",
-    "start": "babel-node scripts",
     "build": "./node_modules/.bin/webpack --config scripts/webpack.config.js"
   },
   "repository": {
