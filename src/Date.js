@@ -1,4 +1,10 @@
+/**
+ * @borrows n2w as n2w
+ */
 import n2w from './n2w.js';
+/**
+ * Contains the string representation of each month.
+ */
 var date = {
   '1': 'january',
   '2': 'february',
@@ -13,6 +19,9 @@ var date = {
   '11': 'november',
   '12': 'december'
 };
+/**
+ * Contains the string representation of each ordinal.
+ */
 var ordinals = {
   'first': [1, 'st'],
   'second': [2, 'nd'],
@@ -35,6 +44,13 @@ var ordinals = {
   'nineteenth': [19, 'th'],
   'twentyth': [20, 'th']
 };
+/**
+ * A method that checks if a particular charcter is present inside a string.
+ * @function
+ * @param {string} toCheck-The character to be checked inside a string
+ * @returns {boolean} 
+ * @class 
+ */
 String.prototype.contains = function (toCheck) {
   var splitStr = this.split('');
   for (var i = 0; i < splitStr.length; i++) {
@@ -44,10 +60,23 @@ String.prototype.contains = function (toCheck) {
   }
   return false;
 };
+/**
+ * The Date class
+ * @class
+ */
 class Date {
+  /**
+   * @constructor
+   * @param {string} str-The string that represents the date 
+   */
   constructor (str) {
     this.date = str;
   }
+  /**
+   * The method that converts dates to its string representation.
+   * @function
+   * @returns {string}
+   */
   convert () {
     var parsedStr = '', tobeParsed = '';
     if (this.date.contains('/')) {

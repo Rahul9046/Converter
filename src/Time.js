@@ -1,4 +1,14 @@
+/**
+ * @borrows n2w as n2w
+ */
 import n2w from './n2w.js';
+/**
+ * A method that checks if a separator encountered is in the list of the valid separators.
+ * @function
+ * @param {string} toCheck-The separator to be checked inside the array
+ * @returns {boolean} 
+ * @class 
+ */
 Array.prototype.contains = function (toCheck) {
   for (var i = 0; i < this.length; i++) {
     if (this[i] === toCheck) {
@@ -7,6 +17,12 @@ Array.prototype.contains = function (toCheck) {
   }
   return false;
 };
+/**
+ * A method that checks if the time representation is valid.
+ * @function
+ * @returns {boolean} 
+ * @class 
+ */
 String.prototype.validTime = function () {
   var separators = [',', ':'];
   var splittedStr = this.split(''), count = 0, flag = 0, lastSeparator, separator;
@@ -35,10 +51,23 @@ String.prototype.validTime = function () {
     };
   }
 };
+/**
+ * The Time class
+ * @class
+ */
 class Time {
+  /**
+   * @constructor
+   * @param {string} str-The time in numeric  representation which will be converted.  
+   */
   constructor (str) {
     this.time = str;
   }
+  /**
+   * The method that converts the time to its textual representation
+   * @function
+   * @returns {string}
+   */
   convertTime () {
     if (this.time.validTime().isValid) {
       var splittedTime = this.time.split(this.time.validTime().separator), parsedTime = '', count = this.time.validTime().count;

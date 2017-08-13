@@ -1,3 +1,6 @@
+/**
+ * Contains the string representation of each factor that might get multiplied with a multiplier.
+ */
 var keywords = {
   'factors': {
     'one': 1,
@@ -65,6 +68,11 @@ var keywords = {
     'quintillion': '1000000000000000000s'
   }
 };
+/**
+ * The method that converts cardinals from its numeric format to its string format.
+ * @param {string} num-The cardinal number in numeric format.
+ * @returns {string}
+ */
 export default (num) => {
   var text = '', indexing = [];
   var splitStr = num.split('');

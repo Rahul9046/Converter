@@ -1,4 +1,10 @@
+/**
+ * @borrows n2w as n2w
+ */
 import n2w from './n2w.js';
+/**
+ * Contains the string representation of each ordinal.
+ */
 var keywords = {
   'cardinal': {
     'first': [1, 'st'],
@@ -23,10 +29,23 @@ var keywords = {
     'twentyth': [20, 'th']
   }
 };
+/**
+ * The SuffixPrefix class
+ * @class
+ */
 class SuffixPrefix {
+  /**
+   * @constructor
+   * @param {string} str-The alphanumeric string that contains any suffix or prefix.
+   */
   constructor (str) {
     this.str = str;
   }
+  /**
+   * The method that converts alphanumeric string that contains any suffix or prefix to its textual representation.
+   * @function
+   * @returns {string}
+   */
   convert () {
     var parsedStr = '';
     if ((this.str.slice(-2) === 'st' || this.str.slice(-2) === 'th' || this.str.slice(-2) === 'rd' || this.str.slice(-2) === 'nd') && (isNaN(this.str.slice(0, this.length - 2)) === false)) {
