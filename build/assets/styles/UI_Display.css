@@ -1,20 +1,33 @@
+*{
+    user-select: none;
+    outline:none;
+}
+body{
+    background-image: url("../images/background.jpg");
+}
 textarea#input{
     position:relative;
     width:500px;
-    height:300px;
+    height:250px;
+    left:380px;
     background-color: #A9CCE3;
+    border-style: dashed;
 }
 input#convert{
     position:relative;
-    width:60px;
+    width:65px;
     height:30px;
+    left:600px;
     border-style: ridge;
     border-radius:10px;
+    border-width: 5px;
 }
 div#output{
     position:relative;
     width:500px;
-    height:300px;
+    height:250px;
+    left:380px;
     overflow: auto;
     background-color: #F5B7B1;
+    border-style: dashed;
 }
